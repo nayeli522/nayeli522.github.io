@@ -1,0 +1,288 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>INDEX</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <style>
+            
+
+            :root{
+            
+                font-family: Arial, Helvetica, sans-serif;
+
+                --color_oscuro:rgb(191, 255, 234);
+                --color_oscuro_transparente:rgba(196, 240, 238, 0.8);
+                --blanco:#fff;
+                --rojo:rgb(238, 141, 141);
+                font-size: 1vw;
+            }
+            
+           
+            *{  padding:0px;
+                margin:0px;
+            }
+            a{
+                text-decoration: none;
+            }
+
+            ol, ul {
+		        list-style: none;
+	        }
+            
+            .centrado_bloque{
+               margin-left: auto;
+               margin-right: auto; 
+            }
+          
+            header{
+                position:fixed;
+                top:0px;
+                left:0px;
+                background-color: var(--color_oscuro);
+                min-height: 3.5rem;
+                width: 100%;
+                z-index: 2000;
+            }
+
+                        
+                        header div{
+                            position: fixed;
+                            top: 0.25rem;
+                            left:2rem; 
+                            color:var(--rojo);
+                            font-size: 1.5rem;
+                                                       
+                        }
+                        header nav{
+                            position:fixed;
+                            top:1rem;
+                            right:5rem; 
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                            
+                            
+                        }
+                             
+                        header nav ul{
+                            text-align: right;
+                        }                  
+                        header nav ul > li{
+                            display: inline-block;
+                            vertical-align: top;
+                            text-align: left;
+                            min-width: 10rem;
+
+                        }
+
+                        header nav ul li > ul{
+                            display: none;
+                        }
+
+                        header nav ul li:hover ul{
+                            display: block;
+                            text-align: center;
+                        }
+                        header nav ul li:hover li{
+                            display:block;
+                            background-color: var(--color_oscuro);
+                        }
+                        
+                       
+                        .submenu:hover ul {
+                            display: block;                 
+                        }
+
+                        .submenu:hover ul > li{
+                            display: block;
+                            background-color: var(--color_oscuro);
+                        }
+                        
+                        nav a{
+                            color: var(--blanco);
+                        }
+                        nav a:hover{
+                            background-color: var(--blanco);
+                            color:var(--color_oscuro);
+                        }
+
+            .hero{
+                background-image: url(image.jpg);
+                background-color: #cccccc;
+                height: 800px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: center;
+            }
+            .hero div{
+                position:relative;
+                top:20rem;
+                right:50rem;
+                background-color: var(--color_oscuro_transparente);
+                color:var(--blanco);
+                font-size: 1.25rem;
+                max-width: 30%;
+                padding:3em;
+            }
+            .hero:hover div{
+                left:0;
+            }
+            .hero div>p{
+                padding-top: 3em;
+                columns:2;
+            }
+            
+            main{
+                position: absolute;
+                top: 50rem;
+                left:10%;
+                min-width: 80%;
+                max-width: 80%;
+                z-index: 2000;
+            }
+
+            main article{
+                min-height: 300px;
+                min-width:50%;
+                background-color: var(--color_oscuro_transparente);
+                padding-top: 10px;
+                padding-bottom: 10px;
+             }
+
+            main article section{
+                min-height: 100px;
+                margin: 10px;
+               
+                font-size: 1.5rem;
+            }
+            
+            #actividades li{
+                display: inline-block;
+                background-color: var(--blanco);
+                color:var(--color_oscuro);
+                margin:2em;
+
+            }
+            #actividades li:hover{
+                background-color: var(--color_oscuroo);
+                color:var(--blanco);
+                margin:2em;
+
+            }
+            
+            
+            
+
+        </style>
+    </head>
+    <body>
+       
+        
+        <header>
+            <div class="contendor-fijo-izquierda">
+                <h1>TIC2 EN CUARENTENA</h1>
+            </div>
+            
+            <nav class="contendor-fijo-derecha">
+                <ul>
+                   
+                    <li class="submenu"><a href="">Mis trabajos TIc</a>
+                        <ul>
+                            <li><a href="#actividades-1">Introducción HTML</a></li>
+                            <li><a href="#ejercicios-2">Introducción CSS</a></li>
+                            <li><a href="#ejercicios-4">La Web Semántica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index2.html">Mi último index</a></li>
+                    <li><a href="#hero">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </header>  
+        
+    
+            
+            <div class="hero">
+                <div>
+                    <h2>Sobre mi</h2>
+                    <p>Me llamo Nayeli, es un nombre poco común, mi segundo nombre es Jazmín pero no me gusta. Tengo 19 años y no los aparento para nada
+                        de hecho parezco de 13 años, curso 2 de Bachiller de Ciencias Sociales en el instituto Doctor Fleming. En el futuro me gustaría ser cantante y actriz. Me va el drama!</p>
+                </div>
+                
+            </div>
+        
+
+        
+               
+        <main>
+
+            
+            <article id="actividades">
+                <section id="ejercicios-1">
+                    <h2>Introducción HTML</h2> 
+                    <ul>
+                        <li><a href="html-ejerc1-intro.html">ejercicio1</a></li>
+                        <li><a href="html-ejerc2-poema.html">ejercicios2</a></li>
+                        <li><a href="html-ejerc3-enfasis.html">ejercicios3</a></li>
+                        <li><a href="html-ejerc4-listas.html">ejercicios4</a></li>
+                        <li><a href="html-ejerc5-utf-8.html">ejercicios5</a></li>
+                        <li><a href="html-ejerc6-img.html">ejerercicios6</a></li>
+                        <li><a href="html-ejerc7-maquillaje.html">ejercicios7</a></li>
+                        
+                    </ul>
+                     
+                   </section>
+                <section id="ejercicios-2">
+                    <h2> Introducción CSS</h2> 
+                    <ul>
+                
+                        <li><a href="html-ejerc8-color-maquillaje.html">ejercicios8</a></li>
+                        <li><a href="html-ejerc9-criatura.html">ejercicios9</a></li>
+                        <li><a href="html-ejerc10-criatura2.html">ejercicios10</a></li>
+                        <li><a href="html-ejerc11-formato.html">ejerercicios11</a></li>
+                        <li><a href="html-ejerc12-Olafs.html">ejercicios12</a></li>
+                        <li><a href="html-ejerc13-clases.html">ejercicios13</a></li>
+                        <li><a href="html-ejerc14-desafio-clases.html">ejercicios14</a></li>
+                        <li><a href="html-ejerc15-selectores">ejercicios15</a></li>
+                        <li><a href="html-ejerc16.html">ejercicios16</a></li>
+
+                    </ul>              
+                </section>
+                <section id="ejercicios-3">
+                    <h2>Más etiquetas</h2> 
+                    <ul>
+                        <li><a href="html-ejerc18-vinculos.html">Lejercicios18</a></li>
+                        <li><a href="html-ejerc19-vinculos_internos.html">ejercicios19</a></li>
+                        <li><a href="html-ejerc20-tabla.html">ejercicios20</a></li>
+                        <li><a href="html-ejerc21-proyecto_recetas.html">ejercicios21</a></li>
+                        
+                    </ul>               
+                </section>
+                <section id="ejercicios-4"> 
+                    <h2>La Web Semántica</h2> 
+                    <ul>
+                        <li><a href="html-ejerc24-videos.html">ejercicios-24</a></li>
+                       
+
+                    </ul>             
+                 </section>
+               
+            </article> 
+            
+            <article id="sobre_mi">
+                <section></section>
+
+            </article>
+        
+
+
+        </main>
+    
+        
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
